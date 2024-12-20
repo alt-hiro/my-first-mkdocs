@@ -1,7 +1,6 @@
 mkdocs
 mkdocs-material
-
 mkdocs-git-revision-date-localized-plugin
 mkdocs-git-authors-plugin
-
-pymdown-extensions
+mkdocs-mermaid2-plugin
+mkdocs-glightbox

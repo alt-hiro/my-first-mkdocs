@@ -16,21 +16,22 @@ nav:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed
   - pymdownx.superfences
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
 
 ## 追加パッケージのインストール
 plugins:
   - search
   - git-revision-date-localized
   - git-authors
-
-
+  - mermaid2
+  - glightbox
+  
 ## 日本語化のための追加設定
 extra:
     search:
