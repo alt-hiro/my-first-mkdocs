@@ -1,6 +1,9 @@
 site_name: My Docs
 theme:
   name: material
+  features:
+    - navigation.tabs
+  language: 'ja'
 
 ## ナビゲーションバー
 nav:
@@ -9,10 +12,26 @@ nav:
     - About: about.md
     - mypage: mypage.md
 
+## Markdown のカスタマイズ用
 markdown_extensions:
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-          
+  - pymdownx.tabbed
+  - pymdownx.superfences
+
+## 追加パッケージのインストール
+plugins:
+  - search
+  - git-revision-date-localized
+  - git-authors
+
+
+## 日本語化のための追加設定
+extra:
+    search:
+        language: 'jp'
