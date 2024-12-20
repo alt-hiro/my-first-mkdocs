@@ -1,0 +1,10 @@
+site_name: My Docs
+theme:
+  name: material
+
+## ナビゲーションバー
+nav:
+  - Home: index.md
+  - About:
+    - About: about.md
+    - mypage: mypage.md
