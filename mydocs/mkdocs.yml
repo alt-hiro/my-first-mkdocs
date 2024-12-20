@@ -36,3 +36,5 @@ plugins:
 extra:
     search:
         language: 'jp'
+          
+copyright: Copyright &copy; 2024 , Hogehoge .
