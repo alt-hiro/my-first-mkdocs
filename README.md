@@ -1,2 +1,7 @@
-# my-first-mkdocs
-Hello mkdocs
+# mkdocs でドキュメントを作る
+
+
+## はじめに
+mkdoc でドキュメント作るときの下設定を見ておくためのプロジェクト
+
+

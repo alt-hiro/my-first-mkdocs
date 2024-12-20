@@ -1,6 +1,11 @@
 site_name: My Docs
 theme:
   name: material
+  language: 'ja'
+
+extra:
+    search:
+        language: 'jp'
 
 ## ナビゲーションバー
 nav:
@@ -9,6 +14,7 @@ nav:
     - About: about.md
     - mypage: mypage.md
 
+## Markdown を正しく表示させるための設定
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
@@ -16,3 +22,4 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
           
+copyright: Copyright &copy; 2024 , Hogehoge .
