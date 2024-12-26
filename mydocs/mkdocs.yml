@@ -1,11 +1,9 @@
 site_name: My Docs
 theme:
   name: material
+  features:
+    - navigation.tabs
   language: 'ja'
-
-extra:
-    search:
-        language: 'jp'
 
 ## ナビゲーションバー
 nav:
@@ -14,12 +12,29 @@ nav:
     - About: about.md
     - mypage: mypage.md
 
-## Markdown を正しく表示させるための設定
+## Markdown のカスタマイズ用
 markdown_extensions:
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+
+## 追加パッケージのインストール
+plugins:
+  - search
+  - git-revision-date-localized
+  - git-authors
+  - mermaid2
+  - glightbox
+  
+## 日本語化のための追加設定
+extra:
+    search:
+        language: 'jp'
           
 copyright: Copyright &copy; 2024 , Hogehoge .
