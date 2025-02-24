@@ -32,5 +32,12 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line scriptこいつは二発目
         run: |
+          pip install hogehoge
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # Runs a set of commands using the runners shell
+      - name: Run a error job エラーするやつ
+        run: |
+          pipppp install hogehoge
+          
